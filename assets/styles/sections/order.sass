@@ -1,0 +1,91 @@
+#order
+    float: left
+    width: 100%
+    background-image: url('../images/architecture-auditorium-chairs-109669-darker.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    font-family: 'Roboto', sans-serif
+    .main-title
+        text-align: center
+        margin: 50px 0 30px 0
+        font-size: 45px
+        color: $white
+    .text
+        font-size: 21px
+        width: 38%
+        margin: 0 auto
+        text-align: center
+        line-height: 31px
+        color: $white
+    #orderForm
+        width: 50%
+        margin: 55px auto 0 auto
+        color: $white
+        label, input
+            width: 100%
+            float: left
+            margin-bottom: 10px
+        input
+            font-size: 21px
+            padding: 5px
+            border-radius: 2px
+            border: none
+            box-sizing: border-box
+            &:focus
+                outline: 0
+        .half-input-container
+            width: 48%
+        .submitbtn
+            box-sizing: border-box
+            width: 100%
+            margin-top: 20px
+            margin-bottom: 70px
+            background: $pink
+            color: $white
+            font-size: 21px
+            cursor: pointer
+            padding: 10px 5px
+            transition: all .4s ease-in-out
+            &:hover
+                background: darken($pink, 5%)
+        #response
+            display: none
+            float: left
+            box-sizing: border-box
+            margin-top: 10px
+            width: 100%
+            font-size: 16px
+            padding: 10px 1rem
+            border: 1px solid #eeeeee
+            background-color: #cccccc
+            border-radius: .25rem
+        #response.success
+            background-color: #d4edda
+            border-color: #c3e6cb
+            color: #155724
+        #response.fail
+            background-color: #f8d7da
+            border-color: #f5c6cb
+            color: #721c24
+
+@media only screen and (max-width: $bp-tablet)
+    #order
+        .text
+            width: 60%
+        #orderForm
+            width: 60%
+
+@media only screen and (max-width: $bp-phone)
+    #order
+        .main-title
+            font-size: 36px
+        .text
+            font-size: 16px
+            width: 70%
+            line-height: 26px
+        #orderForm
+            width: 80%
+            margin: 35px auto 0 auto
+            .half-input-container
+                width: 100%

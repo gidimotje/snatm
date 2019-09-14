@@ -1,0 +1,106 @@
+#header
+    float: left
+    width: 100%
+    min-height: 100vh
+    background-image: url('../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    font-family: 'Roboto', sans-serif
+    #nav
+        width: 80%
+        margin: 0 auto
+        padding: 40px 0
+        .logo
+            width: 100px
+            height: 100px
+            float: left
+            img
+                width: 100%
+                height: 100%
+        .menu
+            float: right
+            list-style: none
+            margin-top: 50px
+            li
+                display: inline-block
+                margin: 0 10px
+                a
+                    color: $white
+                    text-decoration: none
+                    font-size: 21px
+    #hero
+        position: absolute
+        top: 60%
+        left: 50%
+        transform: translate(-50%, -60%)
+        text-align: center
+        color: $white
+        .main-title
+            font-size: 45px
+            margin-bottom: 25px
+        .secondary-title
+            font-size: 28px
+            margin-bottom: 6rem
+            font-weight: 400
+        .cta-btn
+            padding: 25px 85px
+            background-color: $pink
+            color: $white
+            text-decoration: none
+            border-radius: 2px
+
+@media only screen and (max-width: $bp-tablet)
+    #header
+        #nav
+            .logo
+                width: 70px
+                height: 70px
+            .menu
+                margin-top: 30px
+        #hero
+            width: 70%
+            .main-title
+                font-size: 40px
+                margin-bottom: 25px
+            .secondary-title
+                font-size: 21px
+                margin-bottom: 6rem
+
+@media only screen and (max-width: $bp-phone)
+    #header
+        #nav
+            width: 90%
+            padding: 20px 0
+            .logo
+                width: 50px
+                height: 50px
+            .menu
+                margin-top: 20px
+                li
+                    a
+                        font-size: 16px
+        #hero
+            .main-title
+                font-size: 36px
+                margin-bottom: 15px
+            .secondary-title
+                font-size: 21px
+                margin-bottom: 5rem
+            .cta-btn
+                padding: 15px 40px
+                background-color: $pink
+                color: $white
+                text-decoration: none
+                border-radius: 2px
+
+@media only screen and (max-width: $bp-phone-s)
+    #header
+        #nav
+            .menu
+                li
+                    margin: 0 3px
+                    a
+                        font-size: 14px
+        #hero
+            width: 90%
